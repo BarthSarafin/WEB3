@@ -1,0 +1,11 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "description": "web3project",
+  "main": "app.js",
+
+  "dependencies":
+  {
+    "express": "^4.13.3"
+  }
+}
