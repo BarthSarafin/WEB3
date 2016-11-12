@@ -11,64 +11,18 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
+    <script type="riot/tag" src="titlebar.tag"></script>
+    <script type="riot/tag" src="manageProject.tag"></script>
 </head>
 <body>
-    <!-- title -->
-    <div class="container-fluid" id="title">
-        <div class="page-header">
-            <h1 class="text-center"><a href="#">IssueTracker</a></h1>
-            <h1 class="text-center"><a href="#">About</a></h1>
-            <h1 class="text-center"><a href="#">Contact</a></h1>
-        </div>
-    </div>
+<!-- title -->
+    <titlebar></titlebar>
 
+<!-- manageProject -->
+    <manageProject></manageProject>
 
-    <!-- manageProject -->
-    <div class="row" id="manageProjects">
-        <!-- Select Project-->
-        <div class="col-md-4" id="selectProject1">
-            <div class="form-inline">
-                <div class="form-group">
-                    <label for="sel2">Select Project</label>
-                    <select class="form-control" id="sel2">
-                        <option>Project_1</option>
-                        <option>Project_2</option>
-                        <option>Project_3</option>
-                        <option>Project_4</option>
-                    </select>
-                    <button type="submit" class="btn btn-primary">SELECT</button>
-                </div>
-            </div>
-        </div>
-        <!-- Create Project-->
-        <div class="col-md-4" id="createProject1">
-            <form class="form-inline">
-                <div class="form-group">
-                    <label for="projectName">CreateProject</label>
-                    <input type="text" class="form-control" id="projectName" placeholder="ProjectName">
-                </div>
-                <button type="submit" class="btn btn-success">ADD</button>
-            </form>
-        </div>
-        <!-- Remove Project-->
-        <div class="col-md-4" id="deleteProject1">
-            <div class="form-inline">
-                <div class="form-group">
-                    <label for="sel1">Remove Project</label>
-                    <select class="form-control" id="sel1">
-                        <option>Project_1</option>
-                        <option>Project_2</option>
-                        <option>Project_3</option>
-                        <option>Project_4</option>
-                    </select>
-                    <button type="submit" class="btn btn-danger">REMOVE</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Issues -->
+<!-- Issues -->
     <div class="row" id="issue">
         <div class="col-md12">
             <p class="boxTitle">IssueList - Project_1</p>
@@ -158,8 +112,8 @@
         </div>
     </div>
 
-
-
+<!-- RiotMount -->
+<script> riot.mount('*')</script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
